@@ -5,13 +5,12 @@ public class ucretPrimHesap {
         int gunlukCalismaUcreti = 600;
         int primGunlukUcret = 700;
         //int primGunSayisi =0;
-        //int toplamGelir = 0;
+        int toplamGelir = 0;
         Scanner gunSayisi = new Scanner(System.in);
         System.out.println("Gün sayisini girin: ");
         int sayi = gunSayisi.nextInt();
         System.out.println("Çalışılan gün sayısı: " + sayi);
         if (sayi <= 25) {
-            int toplamGelir = 0;
             int primGunSayisi =0;
             System.out.println("Prim hakkınız yok.");
             toplamGelir = sayi * gunlukCalismaUcreti;
@@ -21,7 +20,6 @@ public class ucretPrimHesap {
             System.out.println("Toplam gelir: " + toplamGelir);
         }
         else {
-            int toplamGelir = 0;
             int primGunSayisi = sayi - 25;
             System.out.println("Prim hakkınız var.");
             toplamGelir = sayi * gunlukCalismaUcreti + primGunSayisi * primGunlukUcret;
